@@ -1,0 +1,197 @@
+------------------------------------------------------
+> Experiment started at Wed Jul 24 22:54:14 2024
+> Instance: ../instances/same_topology/network/n10_c3_e25.txt
+> Configuration: ../src/config.conf
+> Algorithm Parameters
+>   - population_size: 20
+>   - elite_percentage: 0.100000
+>   - mutants_percentage: 0.600000
+>   - num_elite_parents: 1
+>   - total_parents: 3
+>   - bias_type: QUADRATIC
+>   - num_independent_populations: 1
+>   - pr_number_pairs: 2
+>   - pr_minimum_distance: 0.150000
+>   - pr_type: PERMUTATION
+>   - alpha_block_size: 1.000000
+>   - pr_percentage: 0.850000
+>   - exchange_interval: 0
+>   - num_exchange_indivuduals: 10
+>   - reset_interval: 0
+> Seed: 320
+> Stop rule: GenerationsImprovement
+> Stop argument: 10
+> Maximum time (s): 900.000000
+> Number of parallel threads for decoding: 1
+------------------------------------------------------
+
+Initial color cost: 10.000000
+New population size: 20
+* Iteration | Cost | CurrentTime
+* 0 | 277 | 0.11
+
+Total number of iterations: 11
+Last update iteration: 0
+Total optimization time: 1.695000
+Last update time: 0.107000
+Large number of iterations between improvements: 0
+Total path relink time: 0.000000
+Total path relink calls: 0
+Number of homogenities: 0
+Improvements in the elite set: 0
+Best individual improvements: 0
+------------------------------------------------------
+Instance information:
+#nodes = 10
+#colors = 3
+------------------------------------------------------
+Deployment (note: -1 means that the node is not colored):
+
+Node 0 -> color -1
+Node 1 -> color 1
+Node 2 -> color 2
+Node 3 -> color 0
+Node 4 -> color -1
+Node 5 -> color 2
+Node 6 -> color 0
+Node 7 -> color 1
+Node 8 -> color 2
+Node 9 -> color -1
+Node 0 -> color 0
+Node 1 -> color 1
+Node 2 -> color 2
+Node 3 -> color 0
+Node 4 -> color 1
+Node 5 -> color 2
+Node 6 -> color 0
+Node 7 -> color 1
+Node 8 -> color 2
+Node 9 -> color 2
+------------------------------------------------------
+Solution information
+Run time (s): 1.695000
+Num node deployed: 7
+Color distribution in the nodes:
+ > Color 0: 2
+ > Color 1: 2
+ > Color 2: 3
+Solution cost: 274.00
+ > Coloring cost: 7.00
+ > Path cost: 267.00
+------------------------------------------------------
+Shortest paths constrained by coloring
+(s,t) -> path -> Cost
+(0, 1) -> [0,6,2,1] -> 3
+(0, 2) -> [0,1,2] -> 2
+(0, 3) -> [0,6,2,1,3] -> 4
+(0, 4) -> [0,1,2,4] -> 3
+(0, 5) -> [0,1,3,5] -> 3
+(0, 6) -> [0,1,2,6] -> 3
+(0, 7) -> [0,1,2,6,7] -> 4
+(0, 8) -> [0,6,7,8] -> 3
+(0, 9) -> [0,1,3,9] -> 3
+(1, 2) -> [1,0,6,2] -> 3
+(1, 3) -> [1,2,4,5,3] -> 18
+(1, 4) -> [1,0,6,2,4] -> 4
+(1, 5) -> [1,3,5] -> 2
+(1, 6) -> [1,2,6] -> 2
+(1, 7) -> [1,2,6,7] -> 3
+(1, 8) -> [1,2,6,7,8] -> 4
+(1, 9) -> [1,3,9] -> 2
+(2, 3) -> [2,1,3] -> 2
+(2, 4) -> [2,6,4] -> 17
+(2, 5) -> [2,1,3,5] -> 3
+(2, 6) -> [2,1,0,6] -> 3
+(2, 7) -> [2,6,7] -> 2
+(2, 8) -> [2,6,7,8] -> 3
+(2, 9) -> [2,1,3,9] -> 3
+(3, 4) -> [3,1,2,4] -> 3
+(3, 5) -> [3,1,2,4,5] -> 18
+(3, 6) -> [3,1,2,6] -> 3
+(3, 7) -> [3,1,2,6,7] -> 4
+(3, 8) -> [3,1,0,6,7,8] -> 5
+(3, 9) -> [3,1,2,9] -> 21
+(4, 5) -> [4,2,1,3,5] -> 4
+(4, 6) -> [4,2,6] -> 2
+(4, 7) -> [4,2,6,7] -> 3
+(4, 8) -> [4,2,6,7,8] -> 4
+(4, 9) -> [4,2,1,3,9] -> 4
+(5, 6) -> [5,3,1,0,6] -> 4
+(5, 7) -> [5,3,1,0,6,7] -> 5
+(5, 8) -> [5,3,1,0,6,7,8] -> 6
+(5, 9) -> [5,4,2,1,3,9] -> 19
+(6, 7) -> [6,2,7] -> 18
+(6, 8) -> [6,7,8] -> 2
+(6, 9) -> [6,0,1,3,9] -> 4
+(7, 8) -> [7,6,2,4,8] -> 28
+(7, 9) -> [7,6,2,1,3,9] -> 5
+(8, 9) -> [8,7,6,0,1,3,9] -> 6
+
+------------------------------------------------------
+Classic shortest paths (without colors)
+(s,t) -> path -> Cost
+(0, 1) -> [0,1] -> 1
+(0, 2) -> [0,1,2] -> 2
+(0, 3) -> [0,1,3] -> 2
+(0, 4) -> [0,1,2,4] -> 3
+(0, 5) -> [0,1,3,5] -> 3
+(0, 6) -> [0,6] -> 1
+(0, 7) -> [0,6,7] -> 2
+(0, 8) -> [0,6,7,8] -> 3
+(0, 9) -> [0,1,3,9] -> 3
+(1, 2) -> [1,2] -> 1
+(1, 3) -> [1,3] -> 1
+(1, 4) -> [1,2,4] -> 2
+(1, 5) -> [1,3,5] -> 2
+(1, 6) -> [1,0,6] -> 2
+(1, 7) -> [1,0,6,7] -> 3
+(1, 8) -> [1,0,6,7,8] -> 4
+(1, 9) -> [1,3,9] -> 2
+(2, 3) -> [2,1,3] -> 2
+(2, 4) -> [2,4] -> 1
+(2, 5) -> [2,1,3,5] -> 3
+(2, 6) -> [2,6] -> 1
+(2, 7) -> [2,6,7] -> 2
+(2, 8) -> [2,6,7,8] -> 3
+(2, 9) -> [2,1,3,9] -> 3
+(3, 4) -> [3,1,2,4] -> 3
+(3, 5) -> [3,5] -> 1
+(3, 6) -> [3,1,0,6] -> 3
+(3, 7) -> [3,1,0,6,7] -> 4
+(3, 8) -> [3,1,0,6,7,8] -> 5
+(3, 9) -> [3,9] -> 1
+(4, 5) -> [4,2,1,3,5] -> 4
+(4, 6) -> [4,2,6] -> 2
+(4, 7) -> [4,2,6,7] -> 3
+(4, 8) -> [4,2,6,7,8] -> 4
+(4, 9) -> [4,2,1,3,9] -> 4
+(5, 6) -> [5,3,1,0,6] -> 4
+(5, 7) -> [5,3,1,0,6,7] -> 5
+(5, 8) -> [5,3,1,0,6,7,8] -> 6
+(5, 9) -> [5,3,9] -> 2
+(6, 7) -> [6,7] -> 1
+(6, 8) -> [6,7,8] -> 2
+(6, 9) -> [6,0,1,3,9] -> 4
+(7, 8) -> [7,8] -> 1
+(7, 9) -> [7,6,0,1,3,9] -> 5
+(8, 9) -> [8,7,6,0,1,3,9] -> 6
+
+
+Results:
+Metric                        Classic                       With Coloring                 
+Average path weight           2.71                          5.93                          
+Variance                      1.89                          38.60                         
+Standard Deviation            1.38                          6.21                          
+Coefficient of Variation (CV) 0.51                          1.05                          
+#colors                       3                             -                             
+Most frequent node count      4.00                          -                             
+
+Measures:
+Coverage Ratio: 77.14%
+Weighted arithmetic mean of the delay: 1.45%
+Percent delay: 118.85%
+CV Difference: -0.54
+
+
+Instance,Seed,NumNodes,TotalIterations,TotalTime,TotalPRTime,PRCalls,NumHomogenities,NumPRImprovElite,NumPrImprovBest,LargeOffset,LastUpdateIteration,LastUpdateTime,Cost
+n10_c3_e25,320,10,11,1.70,0.00,0,0,0,0,0,0,0.11,277.00,2.71,5.93,1.89,38.60,1.38,6.21,0.51,1.05,3
